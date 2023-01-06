@@ -1,0 +1,15 @@
+创建本地库
+1、本地新建仓库testGit，名字与github中的相同
+2、右键目录，点击Git Bash Here，在出现的窗口输入命令 git init
+显示隐藏文件：
+注意此时计算机一定要设置显示隐藏文件，在创建的文件夹testGit下生成了一个管理git仓库的文件夹.git，里面包括所有git操作所需要的文件
+关联本地仓库与github仓库：
+命令：git remote add origin git@github.com:lurry2022/testGit.git
+其中lurry2022是你的注册用户名，testGit是你的仓库名。
+把本地的上传到仓库
+1、首先在本地新建一个test.txt文件。
+2、执行增加命令：git add . 
+add后面的点，表示的是提交所有文件。如果想指定提交文件，可以写文件名。
+3、执行提交命令：git commit -m "第一次提交github的测试" 
+-m 后面是提示信息。
+4、执行推送命令：git push git@github.com:lurry2022/testGit.git
